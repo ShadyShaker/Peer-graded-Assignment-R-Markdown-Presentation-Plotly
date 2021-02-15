@@ -1,0 +1,23 @@
+---
+title: "Ploty"
+author: "Shady Shaker"
+date: "February 15, 2021"
+output: html_document
+---
+
+echo = FALSE
+```
+airquality <- read.csv("G:/Plot.csv") 
+
+plot(airquality$Ozone)
+plot(airquality$Ozone, airquality$Wind)
+plot(airquality)
+plot(airquality$Ozone, type= "b")
+barplot(airquality$Ozone, main = 'Ozone Concenteration in air',xlab = 'ozone levels', col='green',horiz = FALSE)
+boxplot(airquality[,0:4], main='Multiple Box plots')
+
+
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
